@@ -5,11 +5,19 @@ module.exports = {
   groups: [
     {
       title: 'guest',
-      permissions: [ ]
+      permissions: []
     },
     {
       title: 'admin',
-      permissions: [ 'admin' ]
+      permissions: ['admin']
+    },
+
+
+    {
+      title: 'penUser',
+      permissions: ['edit']
     }
+
+
   ]
 };
