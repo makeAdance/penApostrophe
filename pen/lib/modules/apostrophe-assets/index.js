@@ -3,13 +3,19 @@
 
 module.exports = {
   stylesheets: [
+    //{
+    //  name: 'site'
+    //},
     {
-      name: 'site'
+      name: 'bootstrap.min'
     }
   ],
   scripts: [
     {
       name: 'site'
+    },
+    {
+      name: 'bootstrap.min'
     }
   ]
 };

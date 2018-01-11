@@ -6,6 +6,10 @@ module.exports = {
     {
       name: 'home',
       label: 'Home'
+    },
+    {
+      name: 'register',
+      label: 'Register'
     }
 
     // Add more page types here, but make sure you create a corresponding
