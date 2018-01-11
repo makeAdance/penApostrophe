@@ -1,32 +1,34 @@
 var path = require('path');
 
 var apos = require('apostrophe')({
-  shortName: 'pen',
+    shortName: 'pen',
 
-  // See lib/modules for basic project-level configuration of our modules
-  // responsible for serving static assets, managing page templates and
-  // configuring user acounts.
+    // See lib/modules for basic project-level configuration of our modules
+    // responsible for serving static assets, managing page templates and
+    // configuring user acounts.
 
-  modules: {
+    modules: {
 
-    // Apostrophe module configuration
+        // Apostrophe module configuration
 
-    // Note: most configuration occurs in the respective
-    // modules' directories. See lib/apostrophe-assets/index.js for an example.
+        // Note: most configuration occurs in the respective
+        // modules' directories. See lib/apostrophe-assets/index.js for an example.
 
-    // However any modules that are not present by default in Apostrophe must at
-    // least have a minimal configuration here: `moduleName: {}`
+        // However any modules that are not present by default in Apostrophe must at
+        // least have a minimal configuration here: `moduleName: {}`
 
-    // If a template is not found somewhere else, serve it from the top-level
-    // `views/` folder of the project
+        // If a template is not found somewhere else, serve it from the top-level
+        // `views/` folder of the project
 
-    'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
-    'projects': {},
-    'apostrophe-express': {
-      csrf: {
-        exceptions: ['/register']
-      }
+        'apostrophe-templates': {viewsFolderFallback: path.join(__dirname, 'views')},
+        'projects': {},
+        'registration': {},
+        'apostrophe-express': {
+            csrf: {
+                exceptions: ['/register']
+            }
+        }
+
     }
-
-  }
 });
+
