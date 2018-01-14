@@ -22,27 +22,85 @@ module.exports = {
             });
         };
 
-        console.log("Module up");
+        // self.apos.app.post('/register', function(req, res) {
+        //
+        //     //console.log(req.body);
+        //
+        //     console.log("Attempting to add user");
+        //
+        //     self.addUser(req,req.body.firstName,req.body.lastName,req.body.username,req.body.email,req.body.password1,'penUser',function (err) {
+        //         if(err){
+        //             console.log("Error:",err);
+        //         }else{
+        //             console.log("User added");
+        //         }
+        //
+        //
+        //     });
+        //
+        //
+        //
+        // })
 
-        self.apos.app.post('/register', function(req, res) {
+        self.route('post', 'submit', function(req, res) {
+            console.log("Register route called");
+            console.log(req.body);
 
-            //console.log(req.body);
+            //Basic validation logic (DB validation is done automatically on addUser)
 
-            console.log("Attempting to add user");
+            var errors = [];
 
-            self.addUser(req,req.body.firstName,req.body.lastName,req.body.username,req.body.email,req.body.password1,'penUser',function (err) {
-                if(err){
-                    console.log("Error:",err);
-                }else{
-                    console.log("User added");
-                }
+            if(req.body.username.length<=0){
+                errors.push("No username provided!");
+            }
+
+            if(req.body.email.length<=0){
+                errors.push("No email provided!");
+            }
+
+            if(req.body.password1.length<=0){
+                errors.push("No password provided!");
+            }
+
+            if(req.body.password2.length<=0){
+                errors.push("Please repeat the password!");
+            }
+
+            if(req.body.password2.toString() !== req.body.password1.toString()){
+                errors.push("Repeated password does not match!");
+            }
+
+            if(errors.length>0){
+
+                console.log("Validation failed")
+
+                res.send({success:false,errors:errors})
+
+            }else {
+
+                console.log("Attempting to add user");
+                self.addUser(req, req.body.firstName, req.body.lastName, req.body.username, req.body.email, req.body.password1, 'penUser', function (err) {
+                    if (err) {
+                        console.log("Error:", err);
+
+                        switch (err.code) {
+                            case 11000:
+                                res.send({success: false, errors: ["This username or Email is already taken."]});
+                                break;
+                            default:
+                                res.send({success: false, errors: [err.toString()]});
+                        }
+
+                    } else {
+                        console.log("User added");
+                        res.send({success: true});
+                    }
 
 
-            });
+                });
 
-
-
-        })
+            }
+        });
 
 
 

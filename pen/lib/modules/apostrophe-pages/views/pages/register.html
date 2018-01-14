@@ -1,44 +1,48 @@
-{% extends "layout.html" %} {% block main %}
+{% extends "layout.html" %}
+
+
+{% block main %}
 <div class="container mt-4">
 
-  <form method="post">
+    <form id="registerForm">
 
-    <fieldset>
-      <legend>Registration</legend>
+        <fieldset>
+            <legend id="formLegend">Registration</legend>
 
-      <div class="form-group">
-        <label for="ipUsername">Username</label>
-        <input type="text" class="form-control" id="ipUsername" placeholder="Username" name="username">
-      </div>
+            <div class="form-group">
+                <label for="ipUsername">Username</label>
+                <input type="text" class="form-control" id="ipUsername" placeholder="Username" name="username">
+            </div>
 
-      <div class="form-group">
-        <label for="ipFirstName">Firstname</label>
-        <input type="text" class="form-control" id="ipFirstName" placeholder="Firstname" name="firstName">
-      </div>
+            <div class="form-group">
+                <label for="ipFirstName">Firstname</label>
+                <input type="text" class="form-control" id="ipFirstName" placeholder="Firstname" name="firstName">
+            </div>
 
-      <div class="form-group">
-        <label for="ipLastName">Surname</label>
-        <input type="text" class="form-control" id="ipLastName" placeholder="Surname" name="lastName">
-      </div>
+            <div class="form-group">
+                <label for="ipLastName">Surname</label>
+                <input type="text" class="form-control" id="ipLastName" placeholder="Surname" name="lastName">
+            </div>
 
-      <div class="form-group">
-        <label for="ipEmail">Email</label>
-        <input type="email" class="form-control" id="ipEmail" placeholder="Email" name="email">
-      </div>
+            <div class="form-group">
+                <label for="ipEmail">Email</label>
+                <input type="email" class="form-control" id="ipEmail" placeholder="Email" name="email">
+            </div>
 
-      <div class="form-group">
-        <label for="ipPassword1">Password</label>
-        <input type="password" class="form-control" id="ipPassword1" placeholder="Password" name="password1">
-      </div>
+            <div class="form-group">
+                <label for="ipPassword1">Password</label>
+                <input type="password" class="form-control" id="ipPassword1" placeholder="Password" name="password1">
+            </div>
 
-      <div class="form-group">
-        <label for="ipPassword2">Password</label>
-        <input type="password" class="form-control" id="ipPassword2" placeholder="Confirmation Password" name="password2">
-      </div>
+            <div class="form-group">
+                <label for="ipPassword2">Password</label>
+                <input type="password" class="form-control" id="ipPassword2" placeholder="Confirmation Password"
+                       name="password2">
+            </div>
 
-      <button type="submit" class="btn btn-primary">Register</button>
-    </fieldset>
-  </form>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </fieldset>
+    </form>
 
 </div>
 {% endblock %}
