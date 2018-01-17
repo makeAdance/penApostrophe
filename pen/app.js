@@ -32,7 +32,9 @@ var apos = require('apostrophe')({
             session: {
                 secret: 'xyzpdq'
             }
-        }
+        },
+
+        'two-column-widgets': {}
 
     }
 });
