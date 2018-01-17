@@ -7,7 +7,7 @@ module.exports = {
     //  name: 'site'
     //},
     {
-      name: 'bootstrap.min'
+      name: 'bootstrap'
     },
     {
       name: 'navbar'
