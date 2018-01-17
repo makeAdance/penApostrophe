@@ -11,7 +11,7 @@
   </div>
 </div>
 
-{{ piece }}
+{{ piece | dump }}
 
 {% set image = apos.images.first(piece) or null %}
 {%- if (image)  -%}
