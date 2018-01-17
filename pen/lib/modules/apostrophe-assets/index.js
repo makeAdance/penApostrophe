@@ -11,6 +11,9 @@ module.exports = {
     },
     {
       name: 'navbar'
+    },
+    {
+      name: 'projects'
     }
   ],
   scripts: [

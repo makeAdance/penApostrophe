@@ -1,27 +1,28 @@
 {% extends 'layout.html' %} 
 
 {% block main %} 
+<div id="projects-cards-container">
 
 {%- for piece in data.pieces -%}
 
 {% set image = apos.images.first(piece) or null %}
 
-<div class="card">
-  <div class="card-body">
+<div class="card m-2 project-card">
+  <div class="card-body" style="text-align: center;">
     <h4 class="card-title">{{ piece.title | e  }}</h4>
     <h6 class="card-subtitle mb-2 text-muted">{{ piece.publishedAt | date('MMM DD, YYYY' ) }}</h6>
-    {%- if (image)  -%}
-    <img style="height: 100px; display: block;" src="{{ apos.attachments.url(image) }}" alt="Card image">
-    {%- endif -%}
-    <a href="{{ piece._url  }}" class="card-link">Show Project</a>
   </div>
+
+   {%- if (image)  -%}
+    <div style="background-image:url({{ apos.attachments.url(image) }});" class="projects-thumbnail" alt="project-thumbnail">
+    </div>
+   {%- endif -%}
+
+    <a href="{{ piece._url  }}" class="card-link my-3">Show Project</a>
 </div>
 
 {# piece | dump #}
-
 {%- endfor -%} 
 
-
-
-
+</div>
 {% endblock %}

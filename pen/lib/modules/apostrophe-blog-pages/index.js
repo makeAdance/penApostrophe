@@ -1,5 +1,5 @@
 module.exports =
 {
-  perPage: 5,
+  perPage: 20,
     label: 'Project Page'
 }
