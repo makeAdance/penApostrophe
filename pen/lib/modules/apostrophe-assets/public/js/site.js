@@ -15,17 +15,17 @@ $(function () {
 
                 $(".alert").remove();
 
-                if(result.success){
+                if (result.success) {
                     setTimeout(function () {
                         window.location.href = '/login';
-                    },2000);
+                    }, 2000);
                     $("#formLegend").append(
                         "<div class=\"alert alert-dismissible alert-success\">\n" +
                         "  <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n" +
                         "  User successfully created!\n" +
                         "</div>"
                     )
-                }else{
+                } else {
 
                     result.errors.forEach(function (error) {
 
@@ -37,7 +37,6 @@ $(function () {
                         )
 
                     });
-
 
 
                 }

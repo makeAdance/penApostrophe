@@ -24,8 +24,8 @@ var apos = require('apostrophe')({
         'projects': {},
         'registration': {},
         'apostrophe-express': {
-            csrf: {
-                exceptions: ['/register']
+            session: {
+                secret: 'xyzpdq'
             }
         }
 
