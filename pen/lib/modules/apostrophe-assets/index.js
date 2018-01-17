@@ -8,6 +8,9 @@ module.exports = {
     //},
     {
       name: 'bootstrap.min'
+    },
+    {
+      name: 'navbar'
     }
   ],
   scripts: [
