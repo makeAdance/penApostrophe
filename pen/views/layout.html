@@ -29,9 +29,13 @@
     like headers or navigation.
   #}
 
+<div class="container">
   {% include "navbar.html" %}
-
+  
 {% endblock %}
+
+
+
 
 {% block main %}
   {#
@@ -41,8 +45,11 @@
   #}
 {% endblock %}
 
+
 {% block afterMain %}
+</div>
   {#
     This would be a great place to put a global footer.
   #}
 {% endblock %}
+
