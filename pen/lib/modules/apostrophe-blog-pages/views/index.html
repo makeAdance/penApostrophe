@@ -3,20 +3,21 @@
 {% block main %} 
 
 {%- for piece in data.pieces -%}
+
+{% set image = apos.images.first(piece) or null %}
+
 <div class="card">
   <div class="card-body">
     <h4 class="card-title">{{ piece.title | e  }}</h4>
     <h6 class="card-subtitle mb-2 text-muted">{{ piece.publishedAt | date('MMM DD, YYYY' ) }}</h6>
+    {%- if (image)  -%}
+    <img style="height: 100px; display: block;" src="{{ apos.attachments.url(image) }}" alt="Card image">
+    {%- endif -%}
     <a href="{{ piece._url  }}" class="card-link">Show Project</a>
   </div>
 </div>
 
-{{ piece | dump }}
-
-{% set image = apos.images.first(piece) or null %}
-{%- if (image)  -%}
-<image src="{{ apos.attachments.url(image) }}">
-{%- endif -%}
+{# piece | dump #}
 
 {%- endfor -%} 
 
