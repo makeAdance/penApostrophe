@@ -7,7 +7,13 @@ var apos = require('apostrophe')({
     // responsible for serving static assets, managing page templates and
     // configuring user acounts.
 
+    bundles: [ 'apostrophe-blog' ],
+
+
     modules: {
+        'apostrophe-blog': {},
+        'apostrophe-blog-pages': {},
+        'apostrophe-blog-widgets': {},
 
         // Apostrophe module configuration
 
@@ -21,7 +27,6 @@ var apos = require('apostrophe')({
         // `views/` folder of the project
 
         'apostrophe-templates': {viewsFolderFallback: path.join(__dirname, 'views')},
-        'projects': {},
         'registration': {},
         'apostrophe-express': {
             session: {
