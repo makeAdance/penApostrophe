@@ -14,8 +14,12 @@
   </div>
 
    {%- if (image)  -%}
+   <div class="project-thumbnail" style="background-image:url( {{ apos.attachments.url(image) }} );">
+   </div>
+   <!--
     <div style="background-image:url({{ apos.attachments.url(image) }});" class="projects-thumbnail" alt="project-thumbnail">
     </div>
+    -->
    {%- endif -%}
 
     <a href="{{ piece._url  }}" class="card-link my-3">Show Project</a>
