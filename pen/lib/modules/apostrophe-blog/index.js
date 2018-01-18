@@ -22,6 +22,18 @@ module.exports = {
             label: 'Author Username',
             type: 'string',
             contextual: true
+        },
+        {
+            name: 'authorFirstName',
+            label: 'Author First Name',
+            type: 'string',
+            contextual: true
+        },
+        {
+            name: 'authorLastName',
+            label: 'Author Last Name',
+            type: 'string',
+            contextual: true
         }
     ],
 
@@ -33,6 +45,9 @@ module.exports = {
 
             piece._author = req.user["_id"];
             piece.authorName = req.user.username;
+            piece.authorFirstName = req.user.firstName;
+            piece.authorLastName = req.user.lastName;
+
 
             console.log(piece);
 
