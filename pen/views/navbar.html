@@ -5,7 +5,6 @@
   {% set loggedIn = false %}
 {%- endif -%}
 
-
 <div id="pen-header" class="mb-4">
   <div id="pen-header-container">
 
@@ -20,9 +19,10 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto" id="pen-nav-ul">
-      
-      
+
+
+          <ul class="navbar-nav mr-auto">
+
             <li class="nav-item">
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -47,7 +47,21 @@
             {%- endif -%}
 
           </ul>
-       
+
+
+          <ul class="navbar-nav">
+          {% for localization in apos.workflow.localizations() %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ localization._url | build({ workflowLocale: localization.workflowLocale }) }}">
+                {{ localization.label }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+
+
+
+      
         </div>
     
       </nav>

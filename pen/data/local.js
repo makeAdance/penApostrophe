@@ -16,7 +16,7 @@ module.exports = {
       // There is legacy support for host, port, name, user and password options,
       // but this is not necessary. They can all go in the uri option like this:
       // mongodb://user:password@host:port/dbname
-      uri: 'mongodb://admin:Geheim123@ds159676.mlab.com:59676/pen-cms'
+      uri: 'mongodb://admin:Geheim123@ds141766.mlab.com:41766/pen-cms'
     }
   }
 };

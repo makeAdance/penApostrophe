@@ -45,6 +45,21 @@ var apos = require('apostrophe')({
          * 
          */
         'apostrophe-workflow': {
+            prefixes: {
+                'de': '/de',
+                'en': '/en'
+              },
+            locales: [
+                {
+                    name: 'en',
+                    label: 'English'
+                  },
+                  {
+                    name: 'de',
+                    label: 'Deutsch'
+                  }
+              ],
+              defaultLocale: 'en',
             // IMPORTANT: if you follow the examples below,
             // be sure to set this so the templates work
             alias: 'workflow'
