@@ -28,6 +28,7 @@ var apos = require('apostrophe')({
 
         'apostrophe-templates': {viewsFolderFallback: path.join(__dirname, 'views')},
         'registration': {},
+        'profiles':{},
         'apostrophe-express': {
             session: {
                 secret: 'xyzpdq'
