@@ -14,6 +14,9 @@ module.exports = {
     },
     {
       name: 'projects'
+    },
+    {
+      name: 'styles'
     }
   ],
   scripts: [
