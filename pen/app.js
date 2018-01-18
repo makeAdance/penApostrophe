@@ -34,7 +34,23 @@ var apos = require('apostrophe')({
             }
         },
 
-        'two-column-widgets': {}
+        'two-column-widgets': {},
+
+
+
+        /**
+         * 
+         * NPM apostrophe-workflow
+         * https://www.npmjs.com/package/apostrophe-workflow
+         * 
+         */
+        'apostrophe-workflow': {
+            // IMPORTANT: if you follow the examples below,
+            // be sure to set this so the templates work
+            alias: 'workflow'
+          }
+
+
 
     }
 });

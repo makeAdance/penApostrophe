@@ -2,24 +2,24 @@
 // group by default:
 
 module.exports = {
-  // groups: [
-  //   {
-  //     title: 'guest',
-  //     permissions: []
-  //   },
-  //   {
-  //     title: 'admin',
-  //     permissions: ['admin']
-  //   },
-  //
-  //
-  //   {
-  //     title: 'penUser',
-  //     permissions: ['edit']
-  //   }
-  //
-  //
-  // ],
+  groups: [
+    {
+      title: 'guest',
+      permissions: []
+    },
+    {
+      title: 'admin',
+      permissions: ['admin']
+    },
+  
+  
+    {
+      title: 'penUser',
+      permissions: ['edit']
+    }
+  
+  
+  ],
 
 
     beforeSave: function(self, options) {
