@@ -52,11 +52,11 @@ var apos = require('apostrophe')({
             locales: [
                 {
                     name: 'en',
-                    label: 'English'
+                    label: 'EN'
                   },
                   {
                     name: 'de',
-                    label: 'Deutsch'
+                    label: 'DE'
                   }
               ],
               defaultLocale: 'en',
