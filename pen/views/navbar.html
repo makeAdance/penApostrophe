@@ -1,3 +1,11 @@
+{%- if (data.user) -%}
+  {# data.user | dump #}  
+  {% set loggedIn = true %}
+{% else %}
+  {% set loggedIn = false %}
+{%- endif -%}
+
+
 <div id="pen-header" class="mb-4">
   <div id="pen-header-container">
 
@@ -20,17 +28,24 @@
             </li>
       
             <li class="nav-item">
-              <a class="nav-link" href="/register">Register</a>
-            </li>
-      
-            <li class="nav-item">
               <a class="nav-link" href="/projects">Projects</a>
             </li>
 
+            {%- if not loggedIn -%}
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/register">Register</a>
             </li>
+
+            {% else %}
+             <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            {%- endif -%}
+
           </ul>
        
         </div>
@@ -43,4 +58,5 @@
 
   </div>
 </div>
+
 
