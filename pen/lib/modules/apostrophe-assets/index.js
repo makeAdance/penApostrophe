@@ -13,6 +13,9 @@ module.exports = {
       name: 'navbar'
     },
     {
+      name: 'footer'
+    },
+    {
       name: 'projects'
     },
     {

@@ -5,7 +5,9 @@
   {% set loggedIn = false %}
 {%- endif -%}
 
-<div id="pen-header" class="mb-4">
+{% set prefix = apos.modules['apostrophe-workflow'].lang() %}
+
+<div id="pen-header">
   <div id="pen-header-container">
 
     <div id="pen-header-banner">
@@ -28,7 +30,7 @@
             </li>
       
             <li class="nav-item">
-              <a class="nav-link" href="/projects">Projects</a>
+              <a class="nav-link" href="/{{ prefix }}/projects">Projects</a>
             </li>
 
             {%- if not loggedIn -%}
@@ -37,7 +39,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/register">Register</a>
+              <a class="nav-link" href="/{{ prefix }}/registration">Register</a>
             </li>
 
             {% else %}
@@ -50,8 +52,9 @@
 
 
           <ul class="navbar-nav">
+          {# apos.workflow.localizations() | dump #}
           {% for localization in apos.workflow.localizations() %}
-            <li class="nav-item">
+            <li>
               <a class="nav-link" href="{{ localization._url | build({ workflowLocale: localization.workflowLocale }) }}">
                 {{ localization.label }}
               </a>
