@@ -1,7 +1,10 @@
 {% extends 'layout.html' %} 
 
+{% block title %}{{ __('Projects') }}{% endblock %}
+
+
 {% block main %} 
-<div id="projects-cards-container">
+<div id="projects-cards-container" class="my-4">
 
 {%- for piece in data.pieces -%}
 
