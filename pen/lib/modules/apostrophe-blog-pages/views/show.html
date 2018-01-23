@@ -1,14 +1,20 @@
 {% extends 'layout.html' %}
 
 {% block main %}
-<div>
+<div class="my-4">
 
   <h1>{{ data.piece.title }}</h1>
   {{ data.piece.publishedAt | date('MMM Do, YYYY') }}
 
   {% if data.piece.authorName %}
-    <h5>by {{ data.piece.authorName}}</h5>
+  by {{ data.piece.authorName}}
   {% endif %}
+
+  <br>
+  <br>
+  <br>
+
+
 
   {{ apos.area(data.piece, 'body', {
     widgets: {
@@ -25,6 +31,13 @@
       }
     })
   }}
+
+
+  <br>
+  <br>
+  <h3>Comments</h3>
+  <hr>
+  <br>
 
   <div id="disqus_thread"></div>
   <script>
