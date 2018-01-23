@@ -1,24 +1,11 @@
-{# Automatically extends the right outer layout and also handles AJAX siutations #}
-{% extends data.outerLayout %}
+{# Automatically extends the right outer layout and also handles AJAX siutations #} {% extends data.outerLayout %} {% block
+title %} {# Create a useful, SEO-friendly title tag based on what we have #} {% if data.piece %} {{ data.piece.title }} {%
+elseif data.page %} {{ data.page.title }} {% else %} {{ apos.log('Looks like you forgot to override the title block in a
+template that does not have access to an Apostrophe page or piece.') }} {% endif %} {% endblock %} {% block extraHead %}
+{# This block outputs its contents in the HTML document's
 
-
-
-
-{% block title %}
-  {# Create a useful, SEO-friendly title tag based on what we have #}
-  {% if data.piece %}
-    {{ data.piece.title }}
-  {% elseif data.page %}
-    {{ data.page.title }}
-  {% else %}
-    {{ apos.log('Looks like you forgot to override the title block in a template that does not have access to an Apostrophe page or piece.') }}
-  {% endif %}
-{% endblock %}
-
-{% block extraHead %}
-  {#
-    This block outputs its contents in the HTML document's <head>.
-    It is a good place to put extra <script> <link> and <meta> tags.
+<head>. It is a good place to put extra
+  <script> <link> and <meta> tags.
   #}
 
   <!-- TODO REMOVE (TEMP) additional Bootstrap css (Bc it doesn't work on Windows...) -->
@@ -26,11 +13,11 @@
 
 
 
-{% endblock %}
+        {% endblock %}
 
-{% block beforeMain %}
+        {% block beforeMain %}
   {#
-    We recommend you use the beforeMain block for global page components
+        We recommend you use the beforeMain block for global page components
     like headers or navigation.
   #}
 
@@ -41,34 +28,53 @@
 
 <div id="pen-main" class="container">
 
-{% endblock %}
+          {% endblock %}
 
 
 
 
-{% block main %}
+          {% block main %}
   {#
-    Usually, your page templates in the apostrophe-pages module will override
+          Usually, your page templates in the apostrophe-pages module will override
     this block. It is safe to assume this is where your page-specific content
     should go.
   #}
 {% endblock %}
 
 
-{% block afterMain %}
+          {% block afterMain %}
 </div>
-  {#
-    This would be a great place to put a global footer.
+        {#
+        This would be a great place to put a global footer.
   #}
 
 
+
+{% set prefix = apos.modules['apostrophe-workflow'].lang() %}
 <div id="pen-footer-container">
 
+<div>©2017 Lukas Machetanz, Jonas Grünwald </div>
 
+<div class="d-flex">
+{% for localization in apos.workflow.localizations() %}
+
+<span class="p-2">
+{% if localization.workflowLocale == prefix  %}
+
+<a style="color: #919aa1;" class="text-danger" href="{{ localization._url | build({ workflowLocale: localization.workflowLocale }) }}">
+  {{ localization.label }}
+</a>
+
+{% else %}
+<a style="color: #919aa1;" href="{{ localization._url | build({ workflowLocale: localization.workflowLocale }) }}">
+  {{ localization.label }}
+</a>
+{% endif %}
+
+</span>
+{% endfor %}
+</div>
 
 </div>
 
-
-
 {% endblock %}
-
