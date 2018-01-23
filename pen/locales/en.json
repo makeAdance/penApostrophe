@@ -20,5 +20,21 @@
 	"Move to Trash": "Move to Trash",
 	"Reorganize": "Reorganize",
 	"Locale: en": "Locale: en",
-	"Logout": "Logout"
+	"Logout": "Logout",
+	"New Search": "New Search",
+	"Username or Email": "Username or Email",
+	"Password": "Password",
+	"Log In": "Log In",
+	"Your username or password was incorrect": "Your username or password was incorrect",
+	"Unpublished": "Unpublished",
+	"Create Project": "Create Project",
+	"Manage Projects": "Manage Projects",
+	"Update Project": "Update Project",
+	"Project Versions": "Project Versions",
+	"Trash Project": "Trash Project",
+	"Switch Locales": "Switch Locales",
+	"Click on any locale to switch to viewing it.": "Click on any locale to switch to viewing it.",
+	"Cancel": "Cancel",
+	"Locale: de": "Locale: de",
+	"Filter Results By Type": "Filter Results By Type"
 }
