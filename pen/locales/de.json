@@ -54,5 +54,7 @@
 	"Explore Now": "Projekte ansehen",
 	"Search": "Suchen",
 	"Your confirmation password does not match!": "Your confirmation password does not match!",
-	"This username or email is already taken!": "Der Benutzername oder die E-Mail Adresse sind bereits vergeben!"
+	"This username or email is already taken!": "Der Benutzername oder die E-Mail Adresse sind bereits vergeben!",
+	"An error has occurred": "An error has occurred",
+	"An error has occurred. We're working on it. We apologize for the inconvenience.": "An error has occurred. We're working on it. We apologize for the inconvenience."
 }
