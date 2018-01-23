@@ -84,6 +84,8 @@ var apos = require('apostrophe')({
             // whether to write new locale information to disk automatically - defaults to true (you will want to shut it off in production)
             // updateFiles: false
 
+            register: global
+
         }
 
     }

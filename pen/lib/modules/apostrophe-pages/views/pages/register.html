@@ -7,43 +7,45 @@
     <form id="registerForm">
 
         <fieldset>
+
             <legend id="formLegend">
-            
             {{ __('Registration') }}
             </legend>
+            <br>
 
             <div class="form-group">
-                <label for="ipUsername">Username</label>
-                <input type="text" class="form-control" id="ipUsername" placeholder="Username" name="username">
+                <label for="ipUsername">{{ __('Username') }}</label>
+                <input type="text" class="form-control" id="ipUsername" name="username">
             </div>
 
             <div class="form-group">
-                <label for="ipFirstName">Firstname</label>
-                <input type="text" class="form-control" id="ipFirstName" placeholder="Firstname" name="firstName">
+                <label for="ipFirstName">{{ __('First name') }}</label>
+                <input type="text" class="form-control" id="ipFirstName" name="firstName">
             </div>
 
             <div class="form-group">
-                <label for="ipLastName">Surname</label>
-                <input type="text" class="form-control" id="ipLastName" placeholder="Surname" name="lastName">
+                <label for="ipLastName">{{ __('Last name') }}</label>
+                <input type="text" class="form-control" id="ipLastName" name="lastName">
             </div>
 
             <div class="form-group">
-                <label for="ipEmail">Email</label>
-                <input type="email" class="form-control" id="ipEmail" placeholder="Email" name="email">
+                <label for="ipEmail">{{ __('Email') }}</label>
+                <input type="email" class="form-control" id="ipEmail" name="email">
             </div>
 
             <div class="form-group">
-                <label for="ipPassword1">Password</label>
-                <input type="password" class="form-control" id="ipPassword1" placeholder="Password" name="password1">
+                <label for="ipPassword1">{{ __('Password') }}</label>
+                <input type="password" class="form-control" id="ipPassword1" name="password1">
             </div>
 
             <div class="form-group">
-                <label for="ipPassword2">Password</label>
-                <input type="password" class="form-control" id="ipPassword2" placeholder="Confirmation Password"
-                       name="password2">
+                <label for="ipPassword2">{{ __('Confirmation Password') }}</label>
+                <input type="password" class="form-control" id="ipPassword2" name="password2">
             </div>
 
-            <button type="submit" class="btn btn-primary">Register</button>
+
+            <br>
+            <button type="submit" class="btn btn-primary">{{ __('Register') }}</button>
         </fieldset>
     </form>
 

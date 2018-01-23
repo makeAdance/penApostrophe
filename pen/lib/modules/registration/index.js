@@ -22,26 +22,6 @@ module.exports = {
             });
         };
 
-        // self.apos.app.post('/register', function(req, res) {
-        //
-        //     //console.log(req.body);
-        //
-        //     console.log("Attempting to add user");
-        //
-        //     self.addUser(req,req.body.firstName,req.body.lastName,req.body.username,req.body.email,req.body.password1,'penUser',function (err) {
-        //         if(err){
-        //             console.log("Error:",err);
-        //         }else{
-        //             console.log("User added");
-        //         }
-        //
-        //
-        //     });
-        //
-        //
-        //
-        // })
-
         self.route('post', 'submit', function(req, res) {
             console.log("Register route called");
             console.log(req.body);
@@ -51,7 +31,12 @@ module.exports = {
             var errors = [];
 
             if(req.body.username.length<=0){
-                errors.push("No username provided!");
+                // errors.push("No username provided!");
+                console.log(self.apos.i18n);
+                var error = self.apos.i18n.__('error.username');
+                // errors.push("No username provided!");
+                errors.push(error);
+
             }
 
             if(req.body.email.length<=0){

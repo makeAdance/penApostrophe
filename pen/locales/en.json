@@ -20,5 +20,12 @@
 	"Move to Trash": "Move to Trash",
 	"Reorganize": "Reorganize",
 	"Locale: en": "Locale: en",
-	"Logout": "Logout"
+	"Logout": "Logout",
+	"error.username": "Please insert an username!",
+	"Username": "Username",
+	"First name": "First name",
+	"Last name": "Last name",
+	"Email": "Email",
+	"Password": "Password",
+	"Confirmation Password": "Confirmation Password"
 }
