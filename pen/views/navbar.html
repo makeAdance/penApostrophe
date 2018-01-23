@@ -26,25 +26,25 @@
           <ul class="navbar-nav mr-auto">
 
             <li class="nav-item">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">{{ __('Home') }}<span class="sr-only">(current)</span></a>
             </li>
       
             <li class="nav-item">
-              <a class="nav-link" href="/{{ prefix }}/projects">Projects</a>
+              <a class="nav-link" href="/{{ prefix }}/projects">{{ __('Projects') }}</a>
             </li>
 
             {%- if not loggedIn -%}
             <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
+              <a class="nav-link" href="/login">{{ __('Login') }}</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/{{ prefix }}/registration">Register</a>
+              <a class="nav-link" href="/{{ prefix }}/registration">{{ __('Register') }}</a>
             </li>
 
             {% else %}
              <li class="nav-item">
-              <a class="nav-link" href="/logout">Logout</a>
+              <a class="nav-link" href="/logout">{{ __('Logout') }}</a>
             </li>
             {%- endif -%}
 

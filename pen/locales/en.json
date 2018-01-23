@@ -1,4 +1,24 @@
 {
 	"Server error, please try again.": "Server error, please try again.",
-	"Registration": "Registration"
+	"Registration": "Registration",
+	"Home": "Home",
+	"Projects": "Projects",
+	"Login": "Login",
+	"Register": "Register",
+	"Use the Add Content button to get started.": "Use the Add Content button to get started.",
+	"": "",
+	"Edit undefined": "Edit undefined",
+	"Users": "Users",
+	"Groups": "Groups",
+	"Locales": "Locales",
+	"Log Out": "Log Out",
+	"Page Menu": "Page Menu",
+	"New Page": "New Page",
+	"Copy Page": "Copy Page",
+	"Page Settings": "Page Settings",
+	"Page Versions": "Page Versions",
+	"Move to Trash": "Move to Trash",
+	"Reorganize": "Reorganize",
+	"Locale: en": "Locale: en",
+	"Logout": "Logout"
 }
