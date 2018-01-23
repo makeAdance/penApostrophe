@@ -33,10 +33,8 @@ var apos = require('apostrophe')({
             session: {
                 secret: 'xyzpdq'
             },
-            middleware: [function (req,res,next) {
-                console.log(req.locale);
-                //apos.modules['apostrophe-i18n'].setLocale(req.locale.toString());
-                req.query.lang = req.locale;
+            middleware: [function (req, res, next) {
+                res.cookie('apos_language', req.locale, { maxAge: 900000, httpOnly: false });
                 return next();
             }]
         },
@@ -75,22 +73,16 @@ var apos = require('apostrophe')({
         'apostrophe-i18n': {
 
             // setup some locales - other locales default to defaultLocale silently
-            locales: ['en', 'de', 'es'],
+            locales: ['en', 'de'],
 
             // you may alter a site wide default locale (optional, defaults to 'en')
             defaultLocale: 'de',
 
             // sets a custom cookie name to parse locale settings from  - defaults to apos_language (optional)
-            // cookie: 'apos_language',
+            cookie: 'apos_language',
 
             // whether to write new locale information to disk automatically - defaults to true (you will want to shut it off in production)
             // updateFiles: false
-
-             directory: './mylocales',
-             queryParameter: 'lang',
-            register: global
-
-
 
         }
 
