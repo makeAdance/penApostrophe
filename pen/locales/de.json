@@ -38,10 +38,13 @@
 	"Commit": "Commit",
 	"Image(s)": "Bild(er)",
 	"Rich Text": "Volltext",
-	"error.username": "Bitte geben Sie einen Benutzernamen an!",
 	"Username": "Benutzername",
 	"First name": "Vorname",
 	"Last name": "Nachname",
 	"Email": "E-Mail Adresse",
-	"Confirmation Password": "Passwort Bestätigung"
+	"Confirmation Password": "Passwort Bestätigung",
+	"Please insert a username!": "Bitte geben Sie einen Benutzernamen an!",
+	"Please insert an email!": "Bitte geben Sie eine E-Mail Adresse an!",
+	"Please insert a password!": "Bitte geben Sie ein Passwort ein!",
+	"Please insert a confirmation password!": "Bitte bestätigen Sie ihr Passwort!"
 }

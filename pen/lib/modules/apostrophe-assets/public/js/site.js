@@ -20,7 +20,7 @@ $(function () {
                     setTimeout(function () {
                         window.location.href = '/login';
                     }, 2000);
-                    $("#formLegend").append(
+                    $("#errorContainer").append(
                         "<div class=\"alert alert-dismissible alert-success\">\n" +
                         "  <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n" +
                         "  User successfully created!\n" +
@@ -30,7 +30,7 @@ $(function () {
 
                     result.errors.forEach(function (error) {
 
-                        $("#formLegend").append(
+                        $("#errorContainer").append(
                             "<div class=\"alert alert-dismissible alert-danger\">\n" +
                             "    <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n" +
                             error +
@@ -39,8 +39,9 @@ $(function () {
 
                     });
 
-
                 }
+
+                $("#errorContainer").append("<br>");
 
             });
             return false;

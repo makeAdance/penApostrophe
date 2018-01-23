@@ -21,11 +21,14 @@
 	"Reorganize": "Reorganize",
 	"Locale: en": "Locale: en",
 	"Logout": "Logout",
-	"error.username": "Please insert an username!",
 	"Username": "Username",
 	"First name": "First name",
 	"Last name": "Last name",
 	"Email": "Email",
 	"Password": "Password",
-	"Confirmation Password": "Confirmation Password"
+	"Confirmation Password": "Confirmation Password",
+	"Please insert a username!": "Please insert a username!",
+	"Please insert an email!": "Please insert an email!",
+	"Please insert a password!": "Please insert a password!",
+	"Please insert a confirmation password!": "Please insert a confirmation password!"
 }

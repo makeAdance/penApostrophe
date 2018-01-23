@@ -31,28 +31,24 @@ module.exports = {
             var errors = [];
 
             if(req.body.username.length<=0){
-                // errors.push("No username provided!");
-                console.log(self.apos.i18n);
-                var error = self.apos.i18n.__('error.username');
-                // errors.push("No username provided!");
-                errors.push(error);
+                errors.push(req.__('Please insert a username!'));
 
             }
 
             if(req.body.email.length<=0){
-                errors.push("No email provided!");
+                errors.push(req.__("Please insert an email!"));
             }
 
             if(req.body.password1.length<=0){
-                errors.push("No password provided!");
+                errors.push(req.__("Please insert a password!"));
             }
 
             if(req.body.password2.length<=0){
-                errors.push("Please repeat the password!");
+                errors.push(req.__("Please insert a confirmation password!"));
             }
 
             if(req.body.password2.toString() !== req.body.password1.toString()){
-                errors.push("Repeated password does not match!");
+                errors.push(req.__("Your confirmation password does not match!"));
             }
 
             if(errors.length>0){
