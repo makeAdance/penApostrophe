@@ -72,5 +72,13 @@
 	"Login": "Login",
 	"Register": "Register",
 	"Or you can look at projects without even making an account.": "Or you can look at projects without even making an account.",
-	"Explore Now": "Explore Now"
+	"Explore Now": "Explore Now",
+	"Registration": "Registration",
+	"Locale: en": "Locale: en",
+	"Username": "Username",
+	"First name": "First name",
+	"Last name": "Last name",
+	"Email": "Email",
+	"Password": "Password",
+	"Confirmation Password": "Confirmation Password"
 }
