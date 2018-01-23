@@ -3,6 +3,7 @@ $(function () {
     // JQuery and lodash (_) are both included with Apostrophe, so no need to
     // worry about including them on your own.
 
+
     var regForm = $("#registerForm");
 
     if (regForm[0]) {

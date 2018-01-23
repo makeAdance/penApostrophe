@@ -32,7 +32,13 @@ var apos = require('apostrophe')({
         'apostrophe-express': {
             session: {
                 secret: 'xyzpdq'
-            }
+            },
+            middleware: [function (req,res,next) {
+                console.log(req.locale);
+                //apos.modules['apostrophe-i18n'].setLocale(req.locale.toString());
+                req.query.lang = req.locale;
+                return next();
+            }]
         },
 
         'two-column-widgets': {},
@@ -80,8 +86,8 @@ var apos = require('apostrophe')({
             // whether to write new locale information to disk automatically - defaults to true (you will want to shut it off in production)
             // updateFiles: false
 
-            // directory: './mylocales',
-            // queryParameter: 'lang',
+             directory: './mylocales',
+             queryParameter: 'lang',
             register: global
 
 
