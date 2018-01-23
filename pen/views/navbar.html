@@ -49,23 +49,36 @@
             {%- endif -%}
 
           </ul>
+          <ul class="navbar-nav">
+            {# apos.workflow.localizations() | dump #}
 
+            {% for localization in apos.workflow.localizations() %}
+            <li>
+
+              {% if localization.workflowLocale == prefix  %}
+
+              <a class="nav-link text-info" href="{{ localization._url | build({ workflowLocale: localization.workflowLocale }) }}">
+                {{ localization.label }}
+              </a>
+              {% else %}
+              <a class="nav-link" href="{{ localization._url | build({ workflowLocale: localization.workflowLocale }) }}">
+                {{ localization.label }}
+              </a>
+              {% endif %}
+
+
+
+
+            </li>
+            {% endfor %}
+          </ul>
           <form method="GET" action="/{{ prefix }}/search" class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
           </form>
 
 
-          <ul class="navbar-nav">
-          {# apos.workflow.localizations() | dump #}
-          {% for localization in apos.workflow.localizations() %}
-            <li>
-              <a class="nav-link" href="{{ localization._url | build({ workflowLocale: localization.workflowLocale }) }}">
-                {{ localization.label }}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
+
 
 
 
