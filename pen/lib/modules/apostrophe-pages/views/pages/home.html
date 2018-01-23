@@ -1,29 +1,37 @@
 {% extends "layout.html" %}
+{% set prefix = apos.modules['apostrophe-workflow'].lang() %}
 
 {% block title %}Home{% endblock %}
+
 {% block main %}
-  <div class="main-content my-4">
-    <h3>Hello world!
-      {% if not data.user %}
-        <a class="login-link" href="/login">Login</a>
-      {% endif %}
-    </h3>
-    <p>This is a very barebones Apostrophe project. Now, get to work and make a real website!</p>
-    {{ apos.area(data.page, 'body', {
-      widgets: {
-        'apostrophe-images': {
-          size: 'full'
-        },
-        'apostrophe-rich-text': {
-          toolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Unlink' ],
-          styles: [
-            { name: 'Heading', element: 'h3' },
-            { name: 'Subheading', element: 'h4' },
-            { name: 'Paragraph', element: 'p' }
-          ]
-        }
-      }
-    }) }}
+<div class="mt-4">
+
+  <div class="jumbotron">
+    <h1 class="display-3" style="text-align: center;">{{ __('Welcome to PEN')}}</h1>
+    <p class="lead" style="text-align: center;">
+      {{ __('The Project Exchange Network is an easy way to create and share projects with yourfriends.') }}
+      <br/>
+      {{ __('Create your account and start sharing in minutes!') }}
+    </p>
+
+    <div style="text-align: center;">
+      <a class="btn-outline-primary btn btn-sm" href="/login">{{ __('Login') }}</a>
+      <a class="btn-outline-secondary btn btn-sm" href="/{{ prefix }}/registration">{{ __('Register') }}</a>
+    </div>
+
+    <hr class="my-4">
+
+    <p class="lead" style="text-align: center;">
+      {{ __('Or you can look at projects without even making an account.') }}
+    </p>
+
+    <p class="lead" style="text-align: center;">
+      <a class="btn btn-primary" href="/{{ prefix }}/projects" role="button">
+        {{ __('Explore Now') }}
+      </a>
+    </p>
 
   </div>
+
+</div>
 {% endblock %}
