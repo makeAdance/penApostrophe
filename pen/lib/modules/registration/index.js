@@ -66,7 +66,7 @@ module.exports = {
 
                         switch (err.code) {
                             case 11000:
-                                res.send({success: false, errors: ["This username or Email is already taken."]});
+                                res.send({success: false, errors: [req.__('This username or email is already taken!')]});
                                 break;
                             default:
                                 res.send({success: false, errors: [err.toString()]});
