@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
-{% block title %}{{ data.page.title }}{% endblock %}
+{% block title %}{{ __('Search') }}{% endblock %}
 
 {% block main %}
+<div class="my-4">
 {#
   <form data-apos-search-page-form method="GET" action="{{ data.url | e }}#main">
     {% if data.filters %}
@@ -34,5 +35,7 @@
     <h4>{% if doc._url %}<a href="{{ doc._url }}">{% endif %}{{ doc.title }}{% if doc._url %}</a>{% endif %}</h4>
   {% endfor %}
   {% include "pager.html" %}
+
+</div>
 {% endblock %}
 

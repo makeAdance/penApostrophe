@@ -27,7 +27,7 @@
             
             {% if data.page.type == 'home' %}
             <li class="nav-item">
-              <a class="text-danger nav-link" href="/">{{ __('Home') }}<span class="sr-only">(current)</span></a>
+              <a class="text-white nav-link" href="/">{{ __('Home') }}<span class="sr-only">(current)</span></a>
             </li>
             {% else %}
             <li class="nav-item">
@@ -38,7 +38,7 @@
 
             {% if data.page.type == 'apostrophe-blog-page' %}
             <li class="nav-item">
-              <a class="text-danger nav-link" href="/{{ prefix }}/projects">{{ __('Projects') }}</a>
+              <a class="text-white nav-link" href="/{{ prefix }}/projects">{{ __('Projects') }}</a>
             </li>
             {% else %}
             <li class="nav-item">
@@ -54,7 +54,7 @@
 
             {% if data.page.type == 'register' %}
             <li class="nav-item">
-              <a class="text-danger nav-link" href="/{{ prefix }}/registration">{{ __('Register') }}</a>
+              <a class="text-white nav-link" href="/{{ prefix }}/registration">{{ __('Register') }}</a>
             </li>
             {% else %}
             <li class="nav-item">
@@ -73,8 +73,8 @@
           </ul>
          
           <form method="GET" action="/{{ prefix }}/search" class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" name="q">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">{{ __('Search') }}</button>
           </form>
 
         </div>
