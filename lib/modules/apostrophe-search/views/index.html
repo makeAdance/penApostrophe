@@ -14,7 +14,8 @@
   <div class="list-group">
 
     <a href="#" class="list-group-item list-group-item-action active">
-       {{ __('Search item') }}: <span class="text-muted">{{ data.query.q | e }}</span>
+        <i class="fa fa-list pr-1" aria-hidden="true"></i>
+       {{ __('Search results for') }}: "<span class="text-muted">{{ data.query.q | e }}</span>"
     </a>
 
     {%- if data.docs.length == 0 -%}
@@ -25,8 +26,9 @@
 
 
     {% for doc in data.docs %}
-    <a href="{{ doc._url }}" class="list-group-item list-group-item-action">
+    <a href="{{ doc._url }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
         {{ doc.title }}
+        <i class="fa fa-external-link" aria-hidden="true"></i>
     </a>
     {% endfor %}
 
