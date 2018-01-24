@@ -108,5 +108,11 @@
 	"%s was committed successfully.": "%s was committed successfully.",
 	"Successfully exported to: %s": "Successfully exported to: %s",
 	"Explore Projects": "Explore Projects",
-	"The page has been created and saved.": "The page has been created and saved."
+	"The page has been created and saved.": "The page has been created and saved.",
+	"Show Project": "Show Project",
+	"Your username or password was incorrect": "Your username or password was incorrect",
+	"Add Project": "Add Project",
+	"Search Projects...": "Search Projects...",
+	"No results for current filters.": "No results for current filters.",
+	"Publication Date": "Publication Date"
 }

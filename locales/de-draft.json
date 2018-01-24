@@ -48,8 +48,8 @@
 	"Please insert a password!": "Bitte geben Sie ein Passwort ein!",
 	"Please insert a confirmation password!": "Bitte bestätigen Sie ihr Passwort!",
 	"Welcome to PEN": "Willkommen bei PEN",
-	"The Project Exchange Network is an easy way to create and share projects with yourfriends.": "Das Project Exchange Network ist ein leichter Weg um Projekte zu erstellen und mit seinen Freunden zu teilen.",
-	"Create your account and start sharing in minutes!": "Du hast jetzt sofort die Möglichkeit einen Account zu erstellen und anschließend Projekte zu teilen!",
+	"The Project Exchange Network is an easy way to create and share projects with yourfriends.": "Das Project Exchange Network ist ein leichter Weg um Projekte zu erstellen und mit seinen Freunden auszutauschen.",
+	"Create your account and start sharing in minutes!": "Du hast jetzt sofort die Möglichkeit einen Account zu erstellen und anschließend Projekte zu teilen.",
 	"Or you can look at projects without even making an account.": "Oder du kannst die bestehenden Projekte bei PEN als Gast durchstöbern.",
 	"Explore Now": "Projekte ansehen",
 	"Search": "Suchen",
@@ -212,7 +212,11 @@
 	"Browse": "Browse",
 	"Limit Reached": "Limit Reached",
 	"Click Commit to make these changes live.": "Click Commit to make these changes live.",
-	"Explore Projects": "Explore Projects",
+	"Explore Projects": "Projekte durchsuchen",
 	"Set the options for a new page.": "Set the options for a new page.",
-	"Show Content With These Tags": "Show Content With These Tags"
+	"Show Content With These Tags": "Show Content With These Tags",
+	"Show Project": "Projekt anzeigen",
+	"Create %s": "%s erstellen",
+	"Fill out the fields to add a new %s.": "Felder ausfüllen um ein neues %s hinzuzufügen.",
+	"Meta": "Meta"
 }

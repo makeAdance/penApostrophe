@@ -48,8 +48,8 @@
 	"Please insert a password!": "Bitte geben Sie ein Passwort ein!",
 	"Please insert a confirmation password!": "Bitte bestätigen Sie ihr Passwort!",
 	"Welcome to PEN": "Willkommen bei PEN",
-	"The Project Exchange Network is an easy way to create and share projects with yourfriends.": "Das Project Exchange Network ist ein leichter Weg um Projekte zu erstellen und mit seinen Freunden zu teilen.",
-	"Create your account and start sharing in minutes!": "Du hast jetzt sofort die Möglichkeit einen Account zu erstellen und anschließend Projekte zu teilen!",
+	"The Project Exchange Network is an easy way to create and share projects with yourfriends.": "Das Project Exchange Network ist ein leichter Weg um Projekte zu erstellen und mit seinen Freunden auszutauschen.",
+	"Create your account and start sharing in minutes!": "Du hast jetzt sofort die Möglichkeit einen Account zu erstellen und anschließend Projekte zu teilen.",
 	"Or you can look at projects without even making an account.": "Oder du kannst die bestehenden Projekte bei PEN als Gast durchstöbern.",
 	"Explore Now": "Projekte ansehen",
 	"Search": "Suchen",
@@ -111,5 +111,7 @@
 	"Edit Link": "Link bearbeiten",
 	"Three Column": "Drei Spalten",
 	"Hr": "Abtrennung",
-	"Edit Hr": "Abtrennung bearbeiten"
+	"Edit Hr": "Abtrennung bearbeiten",
+	"Explore Projects": "Projekte durchsuchen",
+	"Show Project": "Projekt anzeigen"
 }
