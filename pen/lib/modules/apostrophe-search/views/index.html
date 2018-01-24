@@ -3,7 +3,7 @@
 
 {% block main %}
 <div class="my-4">
-{#
+
   <form data-apos-search-page-form method="GET" action="{{ data.url | e }}#main">
     {% if data.filters %}
       <div class="ld-meta">{{ __('Filter Results By Type') }}</div>
@@ -22,7 +22,7 @@
     <input type="search" data-apos-search-field value="{{ data.query.q | e }}" name="q" />
     <input type="submit" value="Search" />
   </form>
-#}
+
 
 <h2>
   Search results for

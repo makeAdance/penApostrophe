@@ -12,7 +12,18 @@ var apos = require('apostrophe')({
 
     modules: {
         'apostrophe-blog': {},
-        'apostrophe-search': { },
+        'apostrophe-search': {
+            filters: [
+                {
+                    name: 'apostrophe-blog',
+                    label: 'Blog Posts'
+                },
+                {
+                    name: 'apostrophe-event',
+                    label: 'Events'
+                }
+            ]
+        },
         'apostrophe-blog-pages': {},
         'apostrophe-blog-widgets': {},
 
