@@ -183,5 +183,15 @@
 	"Edit": "Edit",
 	"Select Image(s)": "Select Image(s)",
 	"Exporting a single widget from %s (%s)": "Exporting a single widget from %s (%s)",
-	"To force an export of this widget to additional locales, select them below, then click Export. Selecting the %s locale may still be helpful to select sub-locales.": "To force an export of this widget to additional locales, select them below, then click Export. Selecting the %s locale may still be helpful to select sub-locales."
+	"To force an export of this widget to additional locales, select them below, then click Export. Selecting the %s locale may still be helpful to select sub-locales.": "To force an export of this widget to additional locales, select them below, then click Export. Selecting the %s locale may still be helpful to select sub-locales.",
+	"New Page": "New Page",
+	"Copy Page": "Copy Page",
+	"Page Settings": "Page Settings",
+	"Page Versions": "Page Versions",
+	"Move to Trash": "Move to Trash",
+	"Reorganize": "Reorganize",
+	"Save Link": "Save Link",
+	"Label": "Label",
+	"Edit Link": "Edit Link",
+	"Three Column": "Three Column"
 }
