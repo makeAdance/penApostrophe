@@ -33,7 +33,6 @@ var apos = require('apostrophe')({
 
         'apostrophe-templates': { viewsFolderFallback: path.join(__dirname, 'views') },
         'registration': {},
-        'profiles': {},
         'apostrophe-express': {
             session: {
                 secret: 'xyzpdq'
@@ -85,7 +84,7 @@ var apos = require('apostrophe')({
             locales: ['en', 'de'],
 
             // you may alter a site wide default locale (optional, defaults to 'en')
-            defaultLocale: 'de',
+            defaultLocale: 'en',
 
             // sets a custom cookie name to parse locale settings from  - defaults to apos_language (optional)
             cookie: 'apos_language',
