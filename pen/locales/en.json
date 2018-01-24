@@ -41,12 +41,6 @@
 	"An error has occurred": "An error has occurred",
 	"An error has occurred. We're working on it. We apologize for the inconvenience.": "An error has occurred. We're working on it. We apologize for the inconvenience.",
 	"Search": "Search",
-	"Unpublished": "Unpublished",
 	"Create Project": "Create Project",
-	"Manage Projects": "Manage Projects",
-	"Update Project": "Update Project",
-	"Project Versions": "Project Versions",
-	"Trash Project": "Trash Project",
-	"Filter Results By Type": "Filter Results By Type",
-	"New Search": "New Search"
+	"Manage Projects": "Manage Projects"
 }
