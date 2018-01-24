@@ -27,38 +27,59 @@
             
             {% if data.page.type == 'home' %}
             <li class="nav-item">
-              <a class="text-white nav-link" href="/">{{ __('Home') }}<span class="sr-only">(current)</span></a>
+              <a class="text-white nav-link" href="/">
+                <i class="fa fa-home pr-1" aria-hidden="true"></i>
+                {{ __('Home') }}
+              </a>
             </li>
             {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="/">{{ __('Home') }}<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">
+                <i class="fa fa-home pr-1" aria-hidden="true"></i>
+                {{ __('Home') }}
+              </a>
             </li>
             {% endif %}
 
 
             {% if data.page.type == 'apostrophe-blog-page' %}
             <li class="nav-item">
-              <a class="text-white nav-link" href="/{{ prefix }}/projects">{{ __('Projects') }}</a>
+              <a class="text-white nav-link" href="/{{ prefix }}/projects">
+                <i class="fa fa-file pr-1" aria-hidden="true"></i>
+                {{ __('Projects') }}
+              </a>
             </li>
             {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="/{{ prefix }}/projects">{{ __('Projects') }}</a>
+              <a class="nav-link" href="/{{ prefix }}/projects">
+                <i class="fa fa-file pr-1" aria-hidden="true"></i>
+                {{ __('Projects') }}
+              </a>
             </li>
             {% endif %}
 
 
             {%- if not loggedIn -%}
             <li class="nav-item">
-              <a class="nav-link" href="/login">{{ __('Login') }}</a>
+              <a class="nav-link" href="/login">
+                <i class="fa fa-sign-in pr-1" aria-hidden="true"></i>
+                {{ __('Login') }}
+              </a>
             </li>
 
             {% if data.page.type == 'register' %}
             <li class="nav-item">
-              <a class="text-white nav-link" href="/{{ prefix }}/registration">{{ __('Register') }}</a>
+              <a class="text-white nav-link" href="/{{ prefix }}/registration">
+                <i class="fa fa-user-plus pr-1" aria-hidden="true"></i>
+                {{ __('Register') }}
+              </a>
             </li>
             {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="/{{ prefix }}/registration">{{ __('Register') }}</a>
+              <a class="nav-link" href="/{{ prefix }}/registration">
+                <i class="fa fa-user-plus pr-1" aria-hidden="true"></i>
+                {{ __('Register') }}
+              </a>
             </li>
             {% endif %}
 
@@ -66,15 +87,22 @@
 
             {% else %}
              <li class="nav-item">
-              <a class="nav-link" href="/logout">{{ __('Logout') }}</a>
+              <a class="nav-link" href="/logout">
+                <i class="fa fa-sign-out pr-1" aria-hidden="true"></i>
+                {{ __('Logout') }}
+              </a>
             </li>
             {%- endif -%}
 
           </ul>
          
           <form method="GET" action="/{{ prefix }}/search" class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" name="q">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">{{ __('Search') }}</button>
+            <input class="form-control mr-sm-2" type="text" name="q"
+            placeholder="{{ __('Explore Projects')}}">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              <i class="fa fa-search pr-1" aria-hidden="true"></i>
+              {{ __('Search') }}
+            </button>
           </form>
 
         </div>
