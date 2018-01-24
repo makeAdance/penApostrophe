@@ -13,15 +13,8 @@ var apos = require('apostrophe')({
     modules: {
         'apostrophe-blog': {},
         'apostrophe-search': {
-            filters: [
-                {
-                    name: 'apostrophe-blog',
-                    label: 'Blog Posts'
-                },
-                {
-                    name: 'apostrophe-event',
-                    label: 'Events'
-                }
+            types: [
+                'apostrophe-blog'
             ]
         },
         'apostrophe-blog-pages': {},
