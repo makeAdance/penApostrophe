@@ -71,5 +71,10 @@
 	"Search item": "Search item",
 	"Publish Project": "Publish Project",
 	"Video": "Video",
-	"Two Column Layout": "Two Column Layout"
+	"Two Column Layout": "Two Column Layout",
+	"File(s)": "File(s)",
+	"Card": "Card",
+	"Edit Card": "Edit Card",
+	"You may be editing that document in another tab or window.\nIf you take control, you could lose work in that tab or window.\nYour last edit in that tab or window was %s minutes ago.\nDo you want to take control?": "You may be editing that document in another tab or window.\nIf you take control, you could lose work in that tab or window.\nYour last edit in that tab or window was %s minutes ago.\nDo you want to take control?",
+	"Add Rich Text": "Add Rich Text"
 }

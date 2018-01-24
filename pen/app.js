@@ -45,6 +45,7 @@ var apos = require('apostrophe')({
         },
 
         'two-column-widgets': {},
+        'card-widgets': {},
 
 
 
