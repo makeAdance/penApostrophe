@@ -48,6 +48,7 @@ var apos = require('apostrophe')({
         'three-column-widgets': {},
         'card-widgets': {},
         'link-widgets': {},
+        'hr-widgets': {},
 
 
 
