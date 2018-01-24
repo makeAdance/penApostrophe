@@ -106,5 +106,7 @@
 	"Locale: de": "Locale: de",
 	"Legacy Trash": "Legacy Trash",
 	"%s was committed successfully.": "%s was committed successfully.",
-	"Successfully exported to: %s": "Successfully exported to: %s"
+	"Successfully exported to: %s": "Successfully exported to: %s",
+	"Explore Projects": "Explore Projects",
+	"The page has been created and saved.": "The page has been created and saved."
 }

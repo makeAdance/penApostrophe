@@ -199,5 +199,21 @@
 	"Margin Top": "Margin Top",
 	"Margin Bottom": "Margin Bottom",
 	"Horizontal Line": "Horizontal Line",
-	"Edit Hr": "Edit Hr"
+	"Edit Hr": "Edit Hr",
+	"Reorganize Pages": "Reorganize Pages",
+	"Drag and drop pages wherever they need to go.": "Drag and drop pages wherever they need to go.",
+	"Explore Projects": "Explore Projects",
+	"Set the options for a new page.": "Set the options for a new page.",
+	"Type": "Type",
+	"Hide in Navigation": "Hide in Navigation",
+	"Who can view this?": "Who can view this?",
+	"Public": "Public",
+	"Login Required": "Login Required",
+	"Certain People": "Certain People",
+	"These Users can View": "These Users can View",
+	"These Groups can View": "These Groups can View",
+	"These Users can Edit": "These Users can Edit",
+	"These Groups can Edit": "These Groups can Edit",
+	"Switch Locales": "Switch Locales",
+	"Click on any locale to switch to viewing it.": "Click on any locale to switch to viewing it."
 }

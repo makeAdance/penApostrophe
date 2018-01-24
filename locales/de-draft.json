@@ -197,5 +197,22 @@
 	"Exporting changes from %s (%s)": "Veränderungen exportieren: %s (%s)",
 	"This change is already committed for the %s locale. To push this change to additional locales, select them below, then click Export. Selecting the %s locale may still be helpful to select sub-locales.": "Diese Änderung ist bereits für %s überwiesen. Um die Änderung für weitere Sprachen zu überweisen, wählen sie diese unten aus. %s auszuwählen ist trotzdem empfohlen.",
 	"Skip": "Überspringen",
-	"Export": "Exportieren"
+	"Export": "Exportieren",
+	"Change the settings of a page.": "Change the settings of a page.",
+	"Hide in Navigation": "Hide in Navigation",
+	"Who can view this?": "Who can view this?",
+	"Public": "Public",
+	"Login Required": "Login Required",
+	"Certain People": "Certain People",
+	"Apply to Subpages": "Apply to Subpages",
+	"These Users can View": "These Users can View",
+	"These Groups can View": "These Groups can View",
+	"These Users can Edit": "These Users can Edit",
+	"These Groups can Edit": "These Groups can Edit",
+	"Browse": "Browse",
+	"Limit Reached": "Limit Reached",
+	"Click Commit to make these changes live.": "Click Commit to make these changes live.",
+	"Explore Projects": "Explore Projects",
+	"Set the options for a new page.": "Set the options for a new page.",
+	"Show Content With These Tags": "Show Content With These Tags"
 }
