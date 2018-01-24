@@ -68,5 +68,13 @@
 	"Search Item": "Search Item",
 	"Filter": "Filter",
 	"Everything Else": "Everything Else",
-	"Search item": "Search item"
+	"Search item": "Search item",
+	"Video": "Video",
+	"File(s)": "File(s)",
+	"Two Column Layout": "Two Column Layout",
+	"%s was committed successfully.": "%s was committed successfully.",
+	"Successfully exported to: %s": "Successfully exported to: %s",
+	"Your submission will be reviewed.": "Your submission will be reviewed.",
+	"Select File(s)": "Select File(s)",
+	"dsl dsl 50 mvl 20170511": "dsl dsl 50 mvl 20170511"
 }
