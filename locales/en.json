@@ -114,5 +114,6 @@
 	"Add Project": "Add Project",
 	"Search Projects...": "Search Projects...",
 	"No results for current filters.": "No results for current filters.",
-	"Publication Date": "Publication Date"
+	"Publication Date": "Publication Date",
+	"You may be editing that document in another tab or window.\nIf you take control, you could lose work in that tab or window.\nYour last edit in that tab or window was %s minutes ago.\nDo you want to take control?": "You may be editing that document in another tab or window.\nIf you take control, you could lose work in that tab or window.\nYour last edit in that tab or window was %s minutes ago.\nDo you want to take control?"
 }
