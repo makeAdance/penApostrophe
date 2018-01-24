@@ -17,6 +17,10 @@
 
 [data-apos-trash-item].apos-button { color: @apos-red; }
 
+.apos-button--danger{
+  color: @apos-white !important;
+}
+
 .apos-button
 {
   position: relative;
@@ -37,6 +41,7 @@
 
   .apos-button-label
   {
+
     opacity: 1;
     .apos-transition();
   }
@@ -125,6 +130,7 @@
   }
   &[apos--danger]
   {
+
     background-color: @apos-red;
   }
 }
@@ -170,6 +176,7 @@
 
 .apos-button--danger
 {
+
   .apos-button--major;
   background-color: @apos-red;
   &:hover
