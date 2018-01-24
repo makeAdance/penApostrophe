@@ -12,6 +12,11 @@ module.exports = {
       type: 'string',
       label: 'Title',
     },
+    {
+      name: 'text',
+      type: 'string',
+      label: 'Text',
+    },
 
     {
       type: 'select',

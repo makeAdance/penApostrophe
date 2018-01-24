@@ -3,27 +3,7 @@
     <div class='card-body {{ data.widget.textColor }}'>
         <h4 class="card-title">{{ data.widget.title }}</h4>
         <p class="card-text">
-        {{
-            apos.singleton(data.piece, 'textBlock', 'apostrophe-rich-text', {
-                
-                toolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'BulletedList' ],
-    styles: [
-      { name: 'Heading 3 (Title)', element: 'h3', attributes: { 'class': 'pen'} },
-      { name: 'Heading 4', element: 'h4' },
-      { name: 'Heading 5', element: 'h5' },
-      { name: 'Paragraph', element: 'p' },
-      { name: 'Line break', element: 'br'},
-      { name: 'Fine print', element: 'small'},
-      { name: 'Lead Text Paragraph', element: 'p', attributes: { 'class': 'lead'} },
-      { name: 'Muted Text', element: 'span', attributes: { 'class': 'text-muted'} },
-      { name: 'Highlighted Text', element: 'span', attributes: { 'class': 'text-info'} },
-      { name: 'Primary Text', element: 'span', attributes: { 'class': 'text-primary'} }
-    ]
-            
-            
-            })
-        
-        }}
+                {{ data.widget.text }}
         </p>
     </div>
 </div>
